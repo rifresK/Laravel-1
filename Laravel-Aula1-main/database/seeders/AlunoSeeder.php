@@ -14,11 +14,11 @@ class AlunoSeeder extends Seeder
     public function run(): void
     {
         DB::table('aluno')->insert([
-            'name' => 'Emanuel',
+            'name' => 'Luiz',
             'dateofbirth' => '1980-05-2',
-            'email' => 'emanuel@gmail.com',
-            'registrationnumber' => '40028922',
-            'classcourse' => 'Eng Software',
+            'email' => 'luiz@gmail.com',
+            'registrationnumber' => '32028922',
+            'classcourse' => 'TADS',
         ]);
     }
 }
