@@ -15,16 +15,16 @@ class ContactsSeeder extends Seeder
     public function run(): void
     {
         DB::table('contacts')->insert([
-            'name' => Crypt::encryptString('Emanuel Sacoman'),
-            'email' => Crypt::encryptString('emanuelsacoman@gmail.com'),
-            'telefone' => Crypt::encryptString('(42) 98099371'),
-            'data_nascimento' => Crypt::encryptString('2003-11-03')
+            'name' => Crypt::encryptString('Luiz'),
+            'email' => Crypt::encryptString('luiz@gmail.com'),
+            'telefone' => Crypt::encryptString('(42) 98229371'),
+            'data_nascimento' => Crypt::encryptString('2003-12-01')
         ]);
 
         DB::table('contacts')->insert([
-            'name' => Crypt::encryptString('Jorge Silva'),
-            'email' => Crypt::encryptString('jorges@gmail.com'),
-            'telefone' => Crypt::encryptString('(42) 56201484'),
+            'name' => Crypt::encryptString('Jorge'),
+            'email' => Crypt::encryptString('jorginho@gmail.com'),
+            'telefone' => Crypt::encryptString('(42) 53101484'),
             'data_nascimento' => Crypt::encryptString('2004-05-05')
         ]);
     }
