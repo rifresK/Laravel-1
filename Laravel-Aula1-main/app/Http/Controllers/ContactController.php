@@ -17,10 +17,10 @@ class ContactController extends Controller
     public function store(){
         $contact = new Contact();
 
-        $contact->name = Crypt::encryptString('Emanuel Sacoman');
-        $contact->email = Crypt::encryptString('emanuelsacoman@gmail.com');
+        $contact->name = Crypt::encryptString('Luiz');
+        $contact->email = Crypt::encryptString('luiz@gmail.com');
         $contact->telefone = Crypt::encryptString('(42) 99999-99999');
-        $contact->data_nascimento = Crypt::encryptString('2003-11-03');
+        $contact->data_nascimento = Crypt::encryptString('2003-12-03');
         $contact->save();
     }
 
